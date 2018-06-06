@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="css/style.css" rel="stylesheet">
+    <title>Validation</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+</head>
+<body>
+    <h1>Employee ID card Information</h1>
+    <form>
+        <div class="input-group">
+            <label for="fname">First name</label>
+            <input type="text" id="fname" required>
+        </div>
+        <div class="input-group">
+            <label for="fullname">Full name</label>
+            <input type="text" id="fullname">
+        </div>
+        <input type="button" onclick="senddetails()" value="Add Details">
+        <br>
+        <span id="errorfirstname" style="color:red">Please Enter first name(preferred name)</span>
+        <span id="errorfullname" style="color:red">Please Enter full name</span>
+    </form>
+    <script src="js/validation.js"></script>
+</body>
+</html>

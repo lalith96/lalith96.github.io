@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://code.highcharts.com/highcharts.js"></script>
+    <script src="https://code.highcharts.com/modules/series-label.js"></script>
+    <script src="https://code.highcharts.com/modules/exporting.js"></script>
+    <script src="https://code.highcharts.com/modules/export-data.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <link href="css/style.css" rel="stylesheet">
+    <title>Weather Application</title>
+</head>
+
+<body>
+    <h1 class="text-center">Weather Forecast</h1>
+    <br>
+    <div class="input-group">
+        <span class="input-group-addon">City Name</span>
+        <input id="cname" type="text" class="form-control" name="msg" placeholder="Enter city name here">
+    </div>
+    <br>
+    <button class="btn btn-primary" id="search">Search</button>
+    <table class="table table-striped">
+        <thead>
+            <tr>
+                <th>Temperature</th>
+                <th>Humidity</th>
+                <th>Pressure</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td id="curtemp">37 c</td>
+                <td id="curhumidity">94</td>
+                <td id="curpressure">85</td>
+            </tr>
+        </tbody>
+    </table>
+    <div class="container"></div>
+    <script src="js/weather.js"></script>
+</body>
+
+</html>
