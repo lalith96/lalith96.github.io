@@ -1,0 +1,13 @@
+body{
+    margin:auto;
+}
+
+.form-container{
+    width:75%;
+    margin:auto;
+}
+.form-group{
+    padding-left: 0px !important;
+    padding-right: 8px !important;
+} 
+
