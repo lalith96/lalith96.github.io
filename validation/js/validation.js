@@ -1,12 +1,10 @@
 function senddetails() {
-    if (validatefirstname()) {
-        if (validatefullname())
-            senddata();
-        else
-            $('#errorfullname').show();
+    if (!validatefirstname())
+    {
+        $('#inputfname').border="1px solid red";
     }
-    else
-        $('#errorfirstname').show();
+    //     $('#errorfullname').show();
+    //     $('#errorfirstname').show();
 }
 function senddata() {
     const data = {
@@ -14,7 +12,7 @@ function senddata() {
         fname: $('#fullname').val()
     }
     $.ajax({
-        type: 'POST',
+        type:'POST',
         url: "https://idcarddetails.firebaseio.com/appplication.json",
         data: JSON.stringify(data),
         success: onSuccess
