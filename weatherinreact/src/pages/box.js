@@ -3,6 +3,7 @@ import Head from './head';
 import Banner from './banner';
 import Chart from './chart';
 import Forecast from './forecast';
+import './box.css';
 
 export default class Box extends Component{
     render(){

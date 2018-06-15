@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import Box from './box';
+import './firstpage.css';
 
 export default class Firstpage extends Component {
     render() {

@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import './chart.css';
 
 export default class Chart extends Component {
     render() {

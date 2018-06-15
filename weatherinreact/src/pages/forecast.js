@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import './forecast.css';
 
 export default class Forecast extends Component {
     render() {
