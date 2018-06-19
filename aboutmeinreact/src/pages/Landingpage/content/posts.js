@@ -5,10 +5,10 @@ class Post extends Component {
     render() {
         return (
             <div class="banner">
-                <center><a href="http://aashishbarnwal.com/iceland-the-land-of-fire-ice-and-waterfalls/"><img src="ab.png"></img></a></center>
+                <center><a href="http://aashishbarnwal.com/iceland-the-land-of-fire-ice-and-waterfalls/"><img src="images/ab.png" alt="pic"></img></a></center>
             </div>
         )
     }
 }
 
-export default Post
+export default Post;

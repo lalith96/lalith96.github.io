@@ -9,8 +9,8 @@ class Header extends Component {
                 <div className="menu">
                     <ul>
                         <li><Link to={"/"}>About me</Link></li>
-                        <li><Link to={"./pages/Landingpage/posts"}>Posts</Link></li>
-                        <li><Link to={"./pages/Landingpage/skill"}>Skills</Link></li>
+                        <li><Link to={"/posts"}>Posts</Link></li>
+                        <li><Link to={"/skill"}>Skills</Link></li>
                     </ul>
                 </div>
                 <div class="icons">

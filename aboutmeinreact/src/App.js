@@ -4,7 +4,7 @@ import LandingPage from './pages/Landingpage/Landingpage';
 class App extends Component {
   render() {
     return (
-      <LandingPage/>
+      <LandingPage />
     );
   }
 }

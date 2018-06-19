@@ -17,4 +17,4 @@ class Skill extends Component {
     }
 }
 
-export default Skill
+export default Skill;
