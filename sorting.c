@@ -84,7 +84,7 @@ int quicksort(int a[],int start,int end){
     }   
 }   
 
-maxheapify(int a,int i,int length){   
+maxheapify(int *a,int i,int length){   
     int left = left(i);
     int right = right(i);
     int largest = i;
@@ -94,20 +94,22 @@ maxheapify(int a,int i,int length){
         largest = right;
     }
     if(largest!=i){
-        swap(&a[i],a[largest]);
+        swap(&a[i],&a[largest]);
         maxheapify(a,largest,length);
     }
 }
 
-buildmaxheap(int a,int n){
-    for()
+buildmaxheap(int *a,int n){
+    for(int i = n/2;i>=0;i--){
+        maxheapify(a,i,n);
+    }
 }
 
 heapsort(int a[],int n){
     buildmaxheap(a,n);
-    for(int i=n;i>1;i--){
-        swap(&a[1],&a[i]);
-        maxheapify(a,1,n);
+    for(int i=n;i>0;i--){
+        swap(&a[0],&a[i]);
+        maxheapify(a,0,i);
     }
 }
 
