@@ -113,16 +113,36 @@ heapsort(int a[],int n){
     }
 }
 
+countingsort(int *a,int n,int max){
+    static int *b,*c,i;
+    b = (int *)calloc(n+1,sizeof(int));
+    c = (int *)calloc(max+1,sizeof(int));
+    for(i=0;i<n;i++){
+        c[a[i]]++;
+    }
+    for(i=1;i<=max;i++){
+        c[i] += c[i-1]; 
+    }
+    for(i=n-1;i>=0;i--){
+        b[c[a[i]]] = a[i];
+        c[a[i]]--;
+    }
+    return b;
+}
+
 int main()
 {
-    int n,a[1000];
+    int n,a[1000],max=0;
     scanf("%d",&n);
     for(int i=0;i<n;i++){
         scanf("%d",&a[i]);
+        if(max<a[i]){
+            max=a[i];
+        }
     }
-    heapsort(a,n-1);
-    for(int i=0;i<n;i++){
-        printf("%d ",a[i]);
+    int *b = countingsort(a,n,max);
+    for(int i=1;i<=n;i++){
+        printf("%d ",b[i]);
     }
     return 0;
 }
